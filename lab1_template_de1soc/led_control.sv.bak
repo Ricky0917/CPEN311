@@ -1,0 +1,45 @@
+module led_control(input logic clk_1s, output logic [7:0] leds);
+
+	reg [2:0] state;
+	reg [2:0] next_state;
+	
+	parameter [3:0] led0 = 4'd0;
+	parameter [3:0] led1 = 4'd1;
+	parameter [3:0] led2 = 4'd2;
+	parameter [3:0] led3 = 4'd3;
+	parameter [3:0] led4 = 4'd4;
+	parameter [3:0] led5 = 4'd5;
+	parameter [3:0] led6 = 4'd6;
+	parameter [3:0] led7 = 4'd7;
+	
+	parameter [3:0] led1' = 4'd13;
+	parameter [3:0] led2' = 4'd12;
+	parameter [3:0] led3' = 4'd11;
+	parameter [3:0] led4' = 4'd10;
+	parameter [3:0] led5' = 4'd9;
+	parameter [3:0] led6' = 4'd8;
+	
+	always_ff @(posedge clk_1s) begin
+		state <= next_state;
+	end
+	
+	always_comb begin
+		case(state)
+			led0: next_sate = led1;
+			led1: next_sate = led2;
+			led2: next_sate = led3;
+			led3: next_sate = led4;
+			led4: next_sate = led5;
+			led5: next_sate = led6;
+			led6: next_sate = led7;
+			
+			led7: next_sate = led6';
+			led6': next_sate = led5';
+			led5': next_sate = led4';
+			led4': next_sate = led3';
+			led3': next_sate = led2';
+			led2': next_sate = led1';
+			led1': next_sate = led0;
+		endcase
+	end
+	

@@ -1,0 +1,8 @@
+|q7
+out_sig <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+outclk => inst2.CLK
+outclk => inst1.CLK
+outclk => inst6.IN0
+asy_sig => inst.CLK
+
+

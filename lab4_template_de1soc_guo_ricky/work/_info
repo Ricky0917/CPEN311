@@ -1,0 +1,170 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Administrator/Desktop/311lab4/template_de1soc
+vclock_divider
+Z0 !s110 1616402511
+!i10b 1
+!s100 35QfV6BWP8K0XB`]CBgX`0
+ISJ<WCWEJEc8NElR2S[mFN1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Administrator/Desktop/GZlab4/Lab4 _working
+Z3 w1562672121
+8C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L1-Clockdivider.v
+FC:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L1-Clockdivider.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1616402510.000000
+!s107 C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L1-Clockdivider.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L1-Clockdivider.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vdecode_fsm
+Z8 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R0
+!i10b 1
+!s100 _jdnk0@lmbKYEGYM0L8SA0
+IRBXg^[2=Ii6WNQV;C88b@2
+R1
+!s105 L4_decode_fsm_sv_unit
+S1
+R2
+w1616392941
+8C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_decode_fsm.sv
+FC:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_decode_fsm.sv
+L0 12
+R4
+r1
+!s85 0
+31
+Z9 !s108 1616402511.000000
+!s107 C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_decode_fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_decode_fsm.sv|
+!i113 1
+Z10 o-work work -sv
+R7
+vinit_fsm
+R8
+R0
+!i10b 1
+!s100 J1OJIROohS4F@e2n79An:3
+I<gaj>9DWTjNb=Nj1FF^bF0
+R1
+!s105 L4_init_memory_fsm_sv_unit
+S1
+R2
+w1616393819
+8C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_init_memory_fsm.sv
+FC:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_init_memory_fsm.sv
+L0 8
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_init_memory_fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_init_memory_fsm.sv|
+!i113 1
+R10
+R7
+vmaster_fsm
+R8
+R0
+!i10b 1
+!s100 bmS<CQ0jkRDTXP^:maSMe3
+IX12UMZ7lXF>RKco562ohZ3
+R1
+!s105 L4_MASTER_CONTROL_sv_unit
+S1
+R2
+w1616393358
+8C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_MASTER_CONTROL.sv
+FC:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_MASTER_CONTROL.sv
+L0 7
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_MASTER_CONTROL.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_MASTER_CONTROL.sv|
+!i113 1
+R10
+R7
+vSevenSegmentDisplayDecoder
+Z11 !s110 1616402510
+!i10b 1
+!s100 04cdEA1ld]g_`l4zO2j1S0
+IV3d?2@9=ckUAb]=7BHTBo0
+R1
+R2
+R3
+8C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/SevenSegmentDisplayDecoder.v
+FC:/Users/Administrator/Desktop/GZlab4/Lab4 _working/SevenSegmentDisplayDecoder.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/SevenSegmentDisplayDecoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/SevenSegmentDisplayDecoder.v|
+!i113 1
+R6
+R7
+n@seven@segment@display@decoder
+vswap_fsm
+R8
+R0
+!i10b 1
+!s100 GLG1P^^nS]OEi:@>OXZaF3
+IZmeUDfci<D<:@B<^JlkjG3
+R1
+!s105 L4_swap_memory_fsm_sv_unit
+S1
+R2
+w1616392108
+8C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_swap_memory_fsm.sv
+FC:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_swap_memory_fsm.sv
+L0 11
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_swap_memory_fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_swap_memory_fsm.sv|
+!i113 1
+R10
+R7
+vtrap_edge
+R11
+!i10b 1
+!s100 nifl8i96DZM7WWBL08[Z:1
+IRATUUjWa?5@=@cnEjVEfg2
+R1
+R2
+R3
+8C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/HW3_TRAP_EDGE.v
+FC:/Users/Administrator/Desktop/GZlab4/Lab4 _working/HW3_TRAP_EDGE.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/HW3_TRAP_EDGE.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/HW3_TRAP_EDGE.v|
+!i113 1
+R6
+R7

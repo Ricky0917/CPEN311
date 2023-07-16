@@ -1,0 +1,48 @@
+{C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L1-Clockdivider.v} {1 {vlog -work work -stats=none {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L1-Clockdivider.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module clock_divider
+
+Top level modules:
+	clock_divider
+
+} {} {}} {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_swap_memory_fsm.sv} {1 {vlog -work work -sv -stats=none {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_swap_memory_fsm.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module swap_fsm
+
+Top level modules:
+	swap_fsm
+
+} {} {}} {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_MASTER_CONTROL.sv} {1 {vlog -work work -sv -stats=none {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_MASTER_CONTROL.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module master_fsm
+
+Top level modules:
+	master_fsm
+
+} {} {}} {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_init_memory_fsm.sv} {1 {vlog -work work -sv -stats=none {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_init_memory_fsm.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module init_fsm
+
+Top level modules:
+	init_fsm
+
+} {} {}} {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_decode_fsm.sv} {1 {vlog -work work -sv -stats=none {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/L4_decode_fsm.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module decode_fsm
+
+Top level modules:
+	decode_fsm
+
+} {} {}} {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/HW3_TRAP_EDGE.v} {1 {vlog -work work -stats=none {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/HW3_TRAP_EDGE.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module trap_edge
+
+Top level modules:
+	trap_edge
+
+} {} {}} {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/lab4_top.sv} {0 {vlog -work work -sv -stats=none {C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/lab4_top.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab4_top
+** Error (suppressible): C:/Users/Administrator/Desktop/GZlab4/Lab4 _working/lab4_top.sv(55): (vlog-2388) 'CLK_50M' already declared in this scope (lab4_top).
+
+} {} {}}

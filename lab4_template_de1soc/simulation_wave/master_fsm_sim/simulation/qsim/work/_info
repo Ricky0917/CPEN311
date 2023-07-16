@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/cpen311/lab4_template_de1soc/simulation_wave/master_fsm_sim/simulation/qsim
+vmaster_fsm_sim
+Z1 !s110 1687212313
+!i10b 1
+!s100 7J4T?Li>=5Of;cQVfT=Z22
+IYAm;i1N;?Nm;0MKRJ@<VP1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1687212312
+8master_fsm_sim.vo
+Fmaster_fsm_sim.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1687212313.000000
+!s107 master_fsm_sim.vo|
+!s90 -work|work|master_fsm_sim.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vmaster_fsm_sim_vlg_vec_tst
+R1
+!i10b 1
+!s100 z:3Kf?:XcR9k=5739kW`E3
+IcHJ@7TlaCV^@FI^hOoQ=i3
+R2
+R0
+w1687212310
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

@@ -1,0 +1,25 @@
+module clk_divider_tb();
+	reg clk;
+	reg [31:0] div_clk;
+	reg outclk;
+
+ clock_divider clk_tb(.inclk, .div_clk, .outclk);
+ 
+ initial begin
+    clk <= 1'b1;
+	 
+    forever #5 clk = ~clk;
+   end
+ initial begin
+ 
+ div_clk <= 32'd47801;
+ assert(outclk===32'd23900)$display("[PASS] do display");
+	 else begin $error("[FAIL] do display");
+	 $display("%d",out);
+	 end
+	 
+	 //#10
+ end
+ 
+ 
+endmodule: clk_divider_tb

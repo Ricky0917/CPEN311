@@ -1,0 +1,476 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/11/2023 19:03:29"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          shared_access_to_one_state_machine
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module shared_access_to_one_state_machine_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [7:0] in_received_data;
+reg [31:0] input_arguments_a;
+reg [31:0] input_arguments_b;
+reg reset;
+reg sm_clk;
+reg start_request_a;
+reg start_request_b;
+reg target_state_machine_finished;
+// wires                                               
+wire finish_a;
+wire finish_b;
+wire [31:0] output_arguments;
+wire [7:0] received_data_a;
+wire [7:0] received_data_b;
+wire reset_start_request_a;
+wire reset_start_request_b;
+wire start_target_state_machine;
+
+// assign statements (if any)                          
+shared_access_to_one_state_machine i1 (
+// port map - connection between master ports and signals/registers   
+	.finish_a(finish_a),
+	.finish_b(finish_b),
+	.in_received_data(in_received_data),
+	.input_arguments_a(input_arguments_a),
+	.input_arguments_b(input_arguments_b),
+	.output_arguments(output_arguments),
+	.received_data_a(received_data_a),
+	.received_data_b(received_data_b),
+	.reset(reset),
+	.reset_start_request_a(reset_start_request_a),
+	.reset_start_request_b(reset_start_request_b),
+	.sm_clk(sm_clk),
+	.start_request_a(start_request_a),
+	.start_request_b(start_request_b),
+	.start_target_state_machine(start_target_state_machine),
+	.target_state_machine_finished(target_state_machine_finished)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// sm_clk
+always
+begin
+	sm_clk = 1'b0;
+	sm_clk = #5000 1'b1;
+	#5000;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b0;
+	reset = #140000 1'b1;
+	reset = #20000 1'b0;
+end 
+
+// start_request_a
+initial
+begin
+	start_request_a = 1'b1;
+	start_request_a = #10000 1'b0;
+end 
+
+// start_request_b
+initial
+begin
+	start_request_b = 1'b0;
+	start_request_b = #70000 1'b1;
+	start_request_b = #10000 1'b0;
+end 
+
+// target_state_machine_finished
+initial
+begin
+	target_state_machine_finished = 1'b0;
+	target_state_machine_finished = #40000 1'b1;
+	target_state_machine_finished = #10000 1'b0;
+	target_state_machine_finished = #60000 1'b1;
+	target_state_machine_finished = #10000 1'b0;
+end 
+// in_received_data[ 7 ]
+initial
+begin
+	in_received_data[7] = 1'b0;
+end 
+// in_received_data[ 6 ]
+initial
+begin
+	in_received_data[6] = 1'b1;
+end 
+// in_received_data[ 5 ]
+initial
+begin
+	in_received_data[5] = 1'b0;
+end 
+// in_received_data[ 4 ]
+initial
+begin
+	in_received_data[4] = 1'b1;
+end 
+// in_received_data[ 3 ]
+initial
+begin
+	in_received_data[3] = 1'b0;
+end 
+// in_received_data[ 2 ]
+initial
+begin
+	in_received_data[2] = 1'b0;
+end 
+// in_received_data[ 1 ]
+initial
+begin
+	in_received_data[1] = 1'b1;
+end 
+// in_received_data[ 0 ]
+initial
+begin
+	in_received_data[0] = 1'b1;
+end 
+// input_arguments_a[ 31 ]
+initial
+begin
+	input_arguments_a[31] = 1'b0;
+end 
+// input_arguments_a[ 30 ]
+initial
+begin
+	input_arguments_a[30] = 1'b0;
+end 
+// input_arguments_a[ 29 ]
+initial
+begin
+	input_arguments_a[29] = 1'b1;
+end 
+// input_arguments_a[ 28 ]
+initial
+begin
+	input_arguments_a[28] = 1'b1;
+end 
+// input_arguments_a[ 27 ]
+initial
+begin
+	input_arguments_a[27] = 1'b1;
+end 
+// input_arguments_a[ 26 ]
+initial
+begin
+	input_arguments_a[26] = 1'b0;
+end 
+// input_arguments_a[ 25 ]
+initial
+begin
+	input_arguments_a[25] = 1'b0;
+end 
+// input_arguments_a[ 24 ]
+initial
+begin
+	input_arguments_a[24] = 1'b1;
+end 
+// input_arguments_a[ 23 ]
+initial
+begin
+	input_arguments_a[23] = 1'b1;
+end 
+// input_arguments_a[ 22 ]
+initial
+begin
+	input_arguments_a[22] = 1'b1;
+end 
+// input_arguments_a[ 21 ]
+initial
+begin
+	input_arguments_a[21] = 1'b1;
+end 
+// input_arguments_a[ 20 ]
+initial
+begin
+	input_arguments_a[20] = 1'b0;
+end 
+// input_arguments_a[ 19 ]
+initial
+begin
+	input_arguments_a[19] = 1'b0;
+end 
+// input_arguments_a[ 18 ]
+initial
+begin
+	input_arguments_a[18] = 1'b0;
+end 
+// input_arguments_a[ 17 ]
+initial
+begin
+	input_arguments_a[17] = 1'b1;
+end 
+// input_arguments_a[ 16 ]
+initial
+begin
+	input_arguments_a[16] = 1'b1;
+end 
+// input_arguments_a[ 15 ]
+initial
+begin
+	input_arguments_a[15] = 1'b0;
+end 
+// input_arguments_a[ 14 ]
+initial
+begin
+	input_arguments_a[14] = 1'b0;
+end 
+// input_arguments_a[ 13 ]
+initial
+begin
+	input_arguments_a[13] = 1'b1;
+end 
+// input_arguments_a[ 12 ]
+initial
+begin
+	input_arguments_a[12] = 1'b0;
+end 
+// input_arguments_a[ 11 ]
+initial
+begin
+	input_arguments_a[11] = 1'b1;
+end 
+// input_arguments_a[ 10 ]
+initial
+begin
+	input_arguments_a[10] = 1'b1;
+end 
+// input_arguments_a[ 9 ]
+initial
+begin
+	input_arguments_a[9] = 1'b1;
+end 
+// input_arguments_a[ 8 ]
+initial
+begin
+	input_arguments_a[8] = 1'b0;
+end 
+// input_arguments_a[ 7 ]
+initial
+begin
+	input_arguments_a[7] = 1'b0;
+end 
+// input_arguments_a[ 6 ]
+initial
+begin
+	input_arguments_a[6] = 1'b0;
+end 
+// input_arguments_a[ 5 ]
+initial
+begin
+	input_arguments_a[5] = 1'b1;
+end 
+// input_arguments_a[ 4 ]
+initial
+begin
+	input_arguments_a[4] = 1'b1;
+end 
+// input_arguments_a[ 3 ]
+initial
+begin
+	input_arguments_a[3] = 1'b0;
+end 
+// input_arguments_a[ 2 ]
+initial
+begin
+	input_arguments_a[2] = 1'b0;
+end 
+// input_arguments_a[ 1 ]
+initial
+begin
+	input_arguments_a[1] = 1'b1;
+end 
+// input_arguments_a[ 0 ]
+initial
+begin
+	input_arguments_a[0] = 1'b1;
+end 
+// input_arguments_b[ 31 ]
+initial
+begin
+	input_arguments_b[31] = 1'b0;
+end 
+// input_arguments_b[ 30 ]
+initial
+begin
+	input_arguments_b[30] = 1'b1;
+end 
+// input_arguments_b[ 29 ]
+initial
+begin
+	input_arguments_b[29] = 1'b1;
+end 
+// input_arguments_b[ 28 ]
+initial
+begin
+	input_arguments_b[28] = 1'b1;
+end 
+// input_arguments_b[ 27 ]
+initial
+begin
+	input_arguments_b[27] = 1'b1;
+end 
+// input_arguments_b[ 26 ]
+initial
+begin
+	input_arguments_b[26] = 1'b0;
+end 
+// input_arguments_b[ 25 ]
+initial
+begin
+	input_arguments_b[25] = 1'b1;
+end 
+// input_arguments_b[ 24 ]
+initial
+begin
+	input_arguments_b[24] = 1'b0;
+end 
+// input_arguments_b[ 23 ]
+initial
+begin
+	input_arguments_b[23] = 1'b0;
+end 
+// input_arguments_b[ 22 ]
+initial
+begin
+	input_arguments_b[22] = 1'b0;
+end 
+// input_arguments_b[ 21 ]
+initial
+begin
+	input_arguments_b[21] = 1'b0;
+end 
+// input_arguments_b[ 20 ]
+initial
+begin
+	input_arguments_b[20] = 1'b1;
+end 
+// input_arguments_b[ 19 ]
+initial
+begin
+	input_arguments_b[19] = 1'b1;
+end 
+// input_arguments_b[ 18 ]
+initial
+begin
+	input_arguments_b[18] = 1'b1;
+end 
+// input_arguments_b[ 17 ]
+initial
+begin
+	input_arguments_b[17] = 1'b0;
+end 
+// input_arguments_b[ 16 ]
+initial
+begin
+	input_arguments_b[16] = 1'b1;
+end 
+// input_arguments_b[ 15 ]
+initial
+begin
+	input_arguments_b[15] = 1'b0;
+end 
+// input_arguments_b[ 14 ]
+initial
+begin
+	input_arguments_b[14] = 1'b1;
+end 
+// input_arguments_b[ 13 ]
+initial
+begin
+	input_arguments_b[13] = 1'b0;
+end 
+// input_arguments_b[ 12 ]
+initial
+begin
+	input_arguments_b[12] = 1'b1;
+end 
+// input_arguments_b[ 11 ]
+initial
+begin
+	input_arguments_b[11] = 1'b1;
+end 
+// input_arguments_b[ 10 ]
+initial
+begin
+	input_arguments_b[10] = 1'b1;
+end 
+// input_arguments_b[ 9 ]
+initial
+begin
+	input_arguments_b[9] = 1'b0;
+end 
+// input_arguments_b[ 8 ]
+initial
+begin
+	input_arguments_b[8] = 1'b0;
+end 
+// input_arguments_b[ 7 ]
+initial
+begin
+	input_arguments_b[7] = 1'b1;
+end 
+// input_arguments_b[ 6 ]
+initial
+begin
+	input_arguments_b[6] = 1'b0;
+end 
+// input_arguments_b[ 5 ]
+initial
+begin
+	input_arguments_b[5] = 1'b1;
+end 
+// input_arguments_b[ 4 ]
+initial
+begin
+	input_arguments_b[4] = 1'b0;
+end 
+// input_arguments_b[ 3 ]
+initial
+begin
+	input_arguments_b[3] = 1'b1;
+end 
+// input_arguments_b[ 2 ]
+initial
+begin
+	input_arguments_b[2] = 1'b1;
+end 
+// input_arguments_b[ 1 ]
+initial
+begin
+	input_arguments_b[1] = 1'b1;
+end 
+// input_arguments_b[ 0 ]
+initial
+begin
+	input_arguments_b[0] = 1'b1;
+end 
+endmodule
+

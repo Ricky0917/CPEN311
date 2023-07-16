@@ -1,0 +1,18 @@
+module trap_edge(
+	input logic async_sig, clk, reset;
+	output logic trapped_edge;
+);
+logic signal;
+DFF ff1(.D(1'b1), .clock(async_sig), .ret(reset), .Q(signal));
+DFF ff2(.D(signal), .clock(clk), .ret(reset), .Q(trapped_edge));
+
+
+endmodule
+
+module DFF(input logic D, ret, clock;
+				output logic Q);
+		always_ff @(posedge clock, posedge ret) begin
+			if(ret) Q <= 1'b0;
+			else Q <= D;
+		end
+endmodule

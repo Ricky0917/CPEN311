@@ -1,0 +1,25 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'CLOCK_50'
+Slack : 11.336
+TNS   : 0.000
+
+Type  : Hold 'CLOCK_50'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Recovery 'CLOCK_50'
+Slack : 18.871
+TNS   : 0.000
+
+Type  : Removal 'CLOCK_50'
+Slack : 0.637
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLOCK_50'
+Slack : 9.229
+TNS   : 0.000
+
+------------------------------------------------------------

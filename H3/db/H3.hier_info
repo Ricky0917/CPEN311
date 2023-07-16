@@ -1,0 +1,8 @@
+|trap_edge
+async_sig => Q.CLK
+clk => trapped_edge~reg0.CLK
+reset => trapped_edge~reg0.ACLR
+reset => Q.ACLR
+trapped_edge <= trapped_edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

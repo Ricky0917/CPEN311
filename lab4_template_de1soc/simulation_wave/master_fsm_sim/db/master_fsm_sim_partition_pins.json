@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "init_start",
+					"strict" : false
+				},
+				{
+					"name" : "swap_start",
+					"strict" : false
+				},
+				{
+					"name" : "decode_start",
+					"strict" : false
+				},
+				{
+					"name" : "addr_data_sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_data_sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[0]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[1]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[2]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[3]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[4]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[5]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[6]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[7]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[8]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[9]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[10]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[11]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[12]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[13]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[14]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[15]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[16]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[17]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[18]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[19]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[20]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[21]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[22]",
+					"strict" : false
+				},
+				{
+					"name" : "secret_key[23]",
+					"strict" : false
+				},
+				{
+					"name" : "fail",
+					"strict" : false
+				},
+				{
+					"name" : "pass",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "key_found",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "decode_finish",
+					"strict" : false
+				},
+				{
+					"name" : "abort",
+					"strict" : false
+				},
+				{
+					"name" : "init_finish",
+					"strict" : false
+				},
+				{
+					"name" : "swap_finish",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

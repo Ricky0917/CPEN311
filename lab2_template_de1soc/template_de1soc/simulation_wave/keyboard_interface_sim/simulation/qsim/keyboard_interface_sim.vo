@@ -1,0 +1,848 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "06/09/2023 12:23:00"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module keyboard_interface_sim (
+	clk,
+	keyboard,
+	data_ready,
+	finish,
+	out_signal);
+input 	clk;
+input 	[7:0] keyboard;
+input 	data_ready;
+input 	finish;
+output 	[2:0] out_signal;
+
+// Design Ports Information
+// out_signal[0]	=>  Location: PIN_N21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out_signal[1]	=>  Location: PIN_N20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out_signal[2]	=>  Location: PIN_N16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// keyboard[4]	=>  Location: PIN_N19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// keyboard[0]	=>  Location: PIN_M22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// keyboard[1]	=>  Location: PIN_M18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// keyboard[3]	=>  Location: PIN_K22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// keyboard[6]	=>  Location: PIN_M21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// keyboard[7]	=>  Location: PIN_L19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// keyboard[2]	=>  Location: PIN_L22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// keyboard[5]	=>  Location: PIN_F19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_M16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// finish	=>  Location: PIN_L18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// data_ready	=>  Location: PIN_K21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \keyboard[5]~input_o ;
+wire \~QUARTUS_CREATED_GND~I_combout ;
+wire \clk~input_o ;
+wire \clk~inputCLKENA0_outclk ;
+wire \keyboard[2]~input_o ;
+wire \keyboard[1]~input_o ;
+wire \keyboard[6]~input_o ;
+wire \keyboard[4]~input_o ;
+wire \keyboard[3]~input_o ;
+wire \keyboard[7]~input_o ;
+wire \Equal0~0_combout ;
+wire \keyboard[0]~input_o ;
+wire \Equal8~0_combout ;
+wire \Mux3~1_combout ;
+wire \Equal0~1_combout ;
+wire \Equal2~0_combout ;
+wire \Mux1~0_combout ;
+wire \finish~input_o ;
+wire \Mux1~1_combout ;
+wire \Mux3~0_combout ;
+wire \data_ready~input_o ;
+wire \Mux1~2_combout ;
+wire \Mux1~3_combout ;
+wire \Mux2~1_combout ;
+wire \Mux2~2_combout ;
+wire \Mux2~0_combout ;
+wire \Mux2~3_combout ;
+wire \Mux0~0_combout ;
+wire \Mux0~1_combout ;
+wire \Mux0~2_combout ;
+wire \Mux3~3_combout ;
+wire \Mux3~2_combout ;
+wire [3:0] state;
+
+
+// Location: IOOBUF_X89_Y35_N96
+cyclonev_io_obuf \out_signal[0]~output (
+	.i(state[0]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(out_signal[0]),
+	.obar());
+// synopsys translate_off
+defparam \out_signal[0]~output .bus_hold = "false";
+defparam \out_signal[0]~output .open_drain_output = "false";
+defparam \out_signal[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X89_Y35_N79
+cyclonev_io_obuf \out_signal[1]~output (
+	.i(state[1]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(out_signal[1]),
+	.obar());
+// synopsys translate_off
+defparam \out_signal[1]~output .bus_hold = "false";
+defparam \out_signal[1]~output .open_drain_output = "false";
+defparam \out_signal[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X89_Y35_N45
+cyclonev_io_obuf \out_signal[2]~output (
+	.i(state[2]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(out_signal[2]),
+	.obar());
+// synopsys translate_off
+defparam \out_signal[2]~output .bus_hold = "false";
+defparam \out_signal[2]~output .open_drain_output = "false";
+defparam \out_signal[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y35_N61
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G10
+cyclonev_clkena \clk~inputCLKENA0 (
+	.inclk(\clk~input_o ),
+	.ena(vcc),
+	.outclk(\clk~inputCLKENA0_outclk ),
+	.enaout());
+// synopsys translate_off
+defparam \clk~inputCLKENA0 .clock_type = "global clock";
+defparam \clk~inputCLKENA0 .disable_mode = "low";
+defparam \clk~inputCLKENA0 .ena_register_mode = "always enabled";
+defparam \clk~inputCLKENA0 .ena_register_power_up = "high";
+defparam \clk~inputCLKENA0 .test_syn = "high";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y36_N55
+cyclonev_io_ibuf \keyboard[2]~input (
+	.i(keyboard[2]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\keyboard[2]~input_o ));
+// synopsys translate_off
+defparam \keyboard[2]~input .bus_hold = "false";
+defparam \keyboard[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y36_N21
+cyclonev_io_ibuf \keyboard[1]~input (
+	.i(keyboard[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\keyboard[1]~input_o ));
+// synopsys translate_off
+defparam \keyboard[1]~input .bus_hold = "false";
+defparam \keyboard[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y37_N55
+cyclonev_io_ibuf \keyboard[6]~input (
+	.i(keyboard[6]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\keyboard[6]~input_o ));
+// synopsys translate_off
+defparam \keyboard[6]~input .bus_hold = "false";
+defparam \keyboard[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y36_N4
+cyclonev_io_ibuf \keyboard[4]~input (
+	.i(keyboard[4]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\keyboard[4]~input_o ));
+// synopsys translate_off
+defparam \keyboard[4]~input .bus_hold = "false";
+defparam \keyboard[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y38_N55
+cyclonev_io_ibuf \keyboard[3]~input (
+	.i(keyboard[3]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\keyboard[3]~input_o ));
+// synopsys translate_off
+defparam \keyboard[3]~input .bus_hold = "false";
+defparam \keyboard[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y38_N4
+cyclonev_io_ibuf \keyboard[7]~input (
+	.i(keyboard[7]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\keyboard[7]~input_o ));
+// synopsys translate_off
+defparam \keyboard[7]~input .bus_hold = "false";
+defparam \keyboard[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X88_Y36_N12
+cyclonev_lcell_comb \Equal0~0 (
+// Equation(s):
+// \Equal0~0_combout  = ( !\keyboard[3]~input_o  & ( !\keyboard[7]~input_o  & ( (\keyboard[2]~input_o  & (!\keyboard[1]~input_o  & (\keyboard[6]~input_o  & !\keyboard[4]~input_o ))) ) ) )
+
+	.dataa(!\keyboard[2]~input_o ),
+	.datab(!\keyboard[1]~input_o ),
+	.datac(!\keyboard[6]~input_o ),
+	.datad(!\keyboard[4]~input_o ),
+	.datae(!\keyboard[3]~input_o ),
+	.dataf(!\keyboard[7]~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Equal0~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Equal0~0 .extended_lut = "off";
+defparam \Equal0~0 .lut_mask = 64'h0400000000000000;
+defparam \Equal0~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y36_N38
+cyclonev_io_ibuf \keyboard[0]~input (
+	.i(keyboard[0]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\keyboard[0]~input_o ));
+// synopsys translate_off
+defparam \keyboard[0]~input .bus_hold = "false";
+defparam \keyboard[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X88_Y36_N45
+cyclonev_lcell_comb \Equal8~0 (
+// Equation(s):
+// \Equal8~0_combout  = ( !\keyboard[3]~input_o  & ( !\keyboard[7]~input_o  & ( (\keyboard[6]~input_o  & (\keyboard[1]~input_o  & !\keyboard[0]~input_o )) ) ) )
+
+	.dataa(!\keyboard[6]~input_o ),
+	.datab(!\keyboard[1]~input_o ),
+	.datac(!\keyboard[0]~input_o ),
+	.datad(gnd),
+	.datae(!\keyboard[3]~input_o ),
+	.dataf(!\keyboard[7]~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Equal8~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Equal8~0 .extended_lut = "off";
+defparam \Equal8~0 .lut_mask = 64'h1010000000000000;
+defparam \Equal8~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N36
+cyclonev_lcell_comb \Mux3~1 (
+// Equation(s):
+// \Mux3~1_combout  = ( state[1] & ( (!state[3] & (((!\keyboard[2]~input_o ) # (!\Equal8~0_combout )) # (\keyboard[4]~input_o ))) ) )
+
+	.dataa(!\keyboard[4]~input_o ),
+	.datab(!\keyboard[2]~input_o ),
+	.datac(!state[3]),
+	.datad(!\Equal8~0_combout ),
+	.datae(gnd),
+	.dataf(!state[1]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux3~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux3~1 .extended_lut = "off";
+defparam \Mux3~1 .lut_mask = 64'h00000000F0D0F0D0;
+defparam \Mux3~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X88_Y36_N18
+cyclonev_lcell_comb \Equal0~1 (
+// Equation(s):
+// \Equal0~1_combout  = ( \keyboard[0]~input_o  & ( \Equal0~0_combout  ) )
+
+	.dataa(gnd),
+	.datab(!\Equal0~0_combout ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\keyboard[0]~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Equal0~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Equal0~1 .extended_lut = "off";
+defparam \Equal0~1 .lut_mask = 64'h0000000033333333;
+defparam \Equal0~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X88_Y36_N36
+cyclonev_lcell_comb \Equal2~0 (
+// Equation(s):
+// \Equal2~0_combout  = ( !\keyboard[3]~input_o  & ( !\keyboard[7]~input_o  & ( (\keyboard[6]~input_o  & (!\keyboard[0]~input_o  & (!\keyboard[2]~input_o  & \keyboard[1]~input_o ))) ) ) )
+
+	.dataa(!\keyboard[6]~input_o ),
+	.datab(!\keyboard[0]~input_o ),
+	.datac(!\keyboard[2]~input_o ),
+	.datad(!\keyboard[1]~input_o ),
+	.datae(!\keyboard[3]~input_o ),
+	.dataf(!\keyboard[7]~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Equal2~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Equal2~0 .extended_lut = "off";
+defparam \Equal2~0 .lut_mask = 64'h0040000000000000;
+defparam \Equal2~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N51
+cyclonev_lcell_comb \Mux1~0 (
+// Equation(s):
+// \Mux1~0_combout  = ( state[3] & ( (!state[1] & ((!\Equal2~0_combout ) # (\keyboard[4]~input_o ))) ) )
+
+	.dataa(!\keyboard[4]~input_o ),
+	.datab(!\Equal2~0_combout ),
+	.datac(!state[1]),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!state[3]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux1~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux1~0 .extended_lut = "off";
+defparam \Mux1~0 .lut_mask = 64'h00000000D0D0D0D0;
+defparam \Mux1~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y38_N21
+cyclonev_io_ibuf \finish~input (
+	.i(finish),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\finish~input_o ));
+// synopsys translate_off
+defparam \finish~input .bus_hold = "false";
+defparam \finish~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N15
+cyclonev_lcell_comb \Mux1~1 (
+// Equation(s):
+// \Mux1~1_combout  = ( state[0] & ( (!state[3] & (state[2] & !\finish~input_o )) ) )
+
+	.dataa(!state[3]),
+	.datab(gnd),
+	.datac(!state[2]),
+	.datad(!\finish~input_o ),
+	.datae(gnd),
+	.dataf(!state[0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux1~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux1~1 .extended_lut = "off";
+defparam \Mux1~1 .lut_mask = 64'h000000000A000A00;
+defparam \Mux1~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N48
+cyclonev_lcell_comb \Mux3~0 (
+// Equation(s):
+// \Mux3~0_combout  = ( !state[2] & ( (\keyboard[4]~input_o  & (\Equal2~0_combout  & !state[0])) ) )
+
+	.dataa(!\keyboard[4]~input_o ),
+	.datab(!\Equal2~0_combout ),
+	.datac(gnd),
+	.datad(!state[0]),
+	.datae(gnd),
+	.dataf(!state[2]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux3~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux3~0 .extended_lut = "off";
+defparam \Mux3~0 .lut_mask = 64'h1100110000000000;
+defparam \Mux3~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y38_N38
+cyclonev_io_ibuf \data_ready~input (
+	.i(data_ready),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\data_ready~input_o ));
+// synopsys translate_off
+defparam \data_ready~input .bus_hold = "false";
+defparam \data_ready~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N30
+cyclonev_lcell_comb \Mux1~2 (
+// Equation(s):
+// \Mux1~2_combout  = ( state[0] & ( !state[2] & ( (\data_ready~input_o  & (\keyboard[4]~input_o  & (!state[3] & \Equal2~0_combout ))) ) ) )
+
+	.dataa(!\data_ready~input_o ),
+	.datab(!\keyboard[4]~input_o ),
+	.datac(!state[3]),
+	.datad(!\Equal2~0_combout ),
+	.datae(!state[0]),
+	.dataf(!state[2]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux1~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux1~2 .extended_lut = "off";
+defparam \Mux1~2 .lut_mask = 64'h0000001000000000;
+defparam \Mux1~2 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N42
+cyclonev_lcell_comb \Mux1~3 (
+// Equation(s):
+// \Mux1~3_combout  = ( \Mux3~0_combout  & ( \Mux1~2_combout  ) ) # ( !\Mux3~0_combout  & ( \Mux1~2_combout  ) ) # ( \Mux3~0_combout  & ( !\Mux1~2_combout  & ( ((!\Equal0~1_combout  & ((\Mux1~0_combout ) # (\Mux3~1_combout )))) # (\Mux1~1_combout ) ) ) ) # ( 
+// !\Mux3~0_combout  & ( !\Mux1~2_combout  & ( \Mux1~1_combout  ) ) )
+
+	.dataa(!\Mux3~1_combout ),
+	.datab(!\Equal0~1_combout ),
+	.datac(!\Mux1~0_combout ),
+	.datad(!\Mux1~1_combout ),
+	.datae(!\Mux3~0_combout ),
+	.dataf(!\Mux1~2_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux1~3_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux1~3 .extended_lut = "off";
+defparam \Mux1~3 .lut_mask = 64'h00FF4CFFFFFFFFFF;
+defparam \Mux1~3 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X87_Y36_N44
+dffeas \state[2] (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\Mux1~3_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(state[2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state[2] .is_wysiwyg = "true";
+defparam \state[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N39
+cyclonev_lcell_comb \Mux2~1 (
+// Equation(s):
+// \Mux2~1_combout  = ( state[2] & ( !state[0] ) ) # ( !state[2] & ( (!\keyboard[4]~input_o  & (\keyboard[2]~input_o  & \Equal8~0_combout )) ) )
+
+	.dataa(!\keyboard[4]~input_o ),
+	.datab(!\keyboard[2]~input_o ),
+	.datac(!\Equal8~0_combout ),
+	.datad(!state[0]),
+	.datae(gnd),
+	.dataf(!state[2]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux2~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux2~1 .extended_lut = "off";
+defparam \Mux2~1 .lut_mask = 64'h02020202FF00FF00;
+defparam \Mux2~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N9
+cyclonev_lcell_comb \Mux2~2 (
+// Equation(s):
+// \Mux2~2_combout  = ( !state[1] & ( (!\keyboard[4]~input_o  & (!state[2] & \Equal2~0_combout )) ) )
+
+	.dataa(!\keyboard[4]~input_o ),
+	.datab(gnd),
+	.datac(!state[2]),
+	.datad(!\Equal2~0_combout ),
+	.datae(gnd),
+	.dataf(!state[1]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux2~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux2~2 .extended_lut = "off";
+defparam \Mux2~2 .lut_mask = 64'h00A000A000000000;
+defparam \Mux2~2 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N6
+cyclonev_lcell_comb \Mux2~0 (
+// Equation(s):
+// \Mux2~0_combout  = ( state[0] & ( ((!\keyboard[0]~input_o  & \Equal0~0_combout )) # (state[3]) ) ) # ( !state[0] & ( (\keyboard[0]~input_o  & \Equal0~0_combout ) ) )
+
+	.dataa(gnd),
+	.datab(!\keyboard[0]~input_o ),
+	.datac(!state[3]),
+	.datad(!\Equal0~0_combout ),
+	.datae(gnd),
+	.dataf(!state[0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux2~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux2~0 .extended_lut = "off";
+defparam \Mux2~0 .lut_mask = 64'h003300330FCF0FCF;
+defparam \Mux2~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N12
+cyclonev_lcell_comb \Mux2~3 (
+// Equation(s):
+// \Mux2~3_combout  = ( \Mux2~0_combout  & ( (!state[3] & (!\Mux2~1_combout  & state[1])) ) ) # ( !\Mux2~0_combout  & ( ((!state[3] & (!\Mux2~1_combout  & state[1]))) # (\Mux2~2_combout ) ) )
+
+	.dataa(!state[3]),
+	.datab(!\Mux2~1_combout ),
+	.datac(!\Mux2~2_combout ),
+	.datad(!state[1]),
+	.datae(gnd),
+	.dataf(!\Mux2~0_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux2~3_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux2~3 .extended_lut = "off";
+defparam \Mux2~3 .lut_mask = 64'h0F8F0F8F00880088;
+defparam \Mux2~3 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X87_Y36_N14
+dffeas \state[1] (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\Mux2~3_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(state[1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state[1] .is_wysiwyg = "true";
+defparam \state[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N3
+cyclonev_lcell_comb \Mux0~0 (
+// Equation(s):
+// \Mux0~0_combout  = ( !state[2] & ( (!state[3] & (((state[0])) # (state[1]))) # (state[3] & (!state[1] & (!\Equal2~0_combout ))) ) )
+
+	.dataa(!state[3]),
+	.datab(!state[1]),
+	.datac(!\Equal2~0_combout ),
+	.datad(!state[0]),
+	.datae(gnd),
+	.dataf(!state[2]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux0~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux0~0 .extended_lut = "off";
+defparam \Mux0~0 .lut_mask = 64'h62EA62EA00000000;
+defparam \Mux0~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N0
+cyclonev_lcell_comb \Mux0~1 (
+// Equation(s):
+// \Mux0~1_combout  = ( state[0] & ( (!state[3] & (!state[1] & (!\keyboard[0]~input_o  & \Equal0~0_combout ))) ) ) # ( !state[0] & ( (!\keyboard[0]~input_o ) # (!\Equal0~0_combout ) ) )
+
+	.dataa(!state[3]),
+	.datab(!state[1]),
+	.datac(!\keyboard[0]~input_o ),
+	.datad(!\Equal0~0_combout ),
+	.datae(gnd),
+	.dataf(!state[0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux0~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux0~1 .extended_lut = "off";
+defparam \Mux0~1 .lut_mask = 64'hFFF0FFF000800080;
+defparam \Mux0~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N24
+cyclonev_lcell_comb \Mux0~2 (
+// Equation(s):
+// \Mux0~2_combout  = ( \Mux0~1_combout  & ( state[1] & ( (!\keyboard[4]~input_o  & (\Equal8~0_combout  & (\Mux0~0_combout  & \keyboard[2]~input_o ))) ) ) ) # ( \Mux0~1_combout  & ( !state[1] & ( \Mux0~0_combout  ) ) )
+
+	.dataa(!\keyboard[4]~input_o ),
+	.datab(!\Equal8~0_combout ),
+	.datac(!\Mux0~0_combout ),
+	.datad(!\keyboard[2]~input_o ),
+	.datae(!\Mux0~1_combout ),
+	.dataf(!state[1]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux0~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux0~2 .extended_lut = "off";
+defparam \Mux0~2 .lut_mask = 64'h00000F0F00000002;
+defparam \Mux0~2 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X87_Y36_N26
+dffeas \state[3] (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\Mux0~2_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(state[3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state[3] .is_wysiwyg = "true";
+defparam \state[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N18
+cyclonev_lcell_comb \Mux3~3 (
+// Equation(s):
+// \Mux3~3_combout  = ( \Equal2~0_combout  & ( state[1] & ( (!state[3] & (((\keyboard[0]~input_o  & \Equal0~0_combout )) # (\keyboard[4]~input_o ))) ) ) ) # ( !\Equal2~0_combout  & ( state[1] & ( (\keyboard[0]~input_o  & (!state[3] & \Equal0~0_combout )) ) ) 
+// ) # ( \Equal2~0_combout  & ( !state[1] & ( (!\keyboard[4]~input_o  & (\keyboard[0]~input_o  & ((\Equal0~0_combout )))) # (\keyboard[4]~input_o  & (((\keyboard[0]~input_o  & \Equal0~0_combout )) # (state[3]))) ) ) ) # ( !\Equal2~0_combout  & ( !state[1] & 
+// ( (\keyboard[0]~input_o  & \Equal0~0_combout ) ) ) )
+
+	.dataa(!\keyboard[4]~input_o ),
+	.datab(!\keyboard[0]~input_o ),
+	.datac(!state[3]),
+	.datad(!\Equal0~0_combout ),
+	.datae(!\Equal2~0_combout ),
+	.dataf(!state[1]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux3~3_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux3~3 .extended_lut = "off";
+defparam \Mux3~3 .lut_mask = 64'h0033053700305070;
+defparam \Mux3~3 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y36_N54
+cyclonev_lcell_comb \Mux3~2 (
+// Equation(s):
+// \Mux3~2_combout  = ( state[0] & ( \Mux3~3_combout  & ( (!state[3] & ((!\Equal0~0_combout ) # ((state[2]) # (\keyboard[0]~input_o )))) ) ) ) # ( !state[0] & ( \Mux3~3_combout  & ( !state[2] ) ) ) # ( state[0] & ( !\Mux3~3_combout  & ( (!state[3] & 
+// ((!\Equal0~0_combout ) # ((state[2]) # (\keyboard[0]~input_o )))) ) ) )
+
+	.dataa(!\Equal0~0_combout ),
+	.datab(!\keyboard[0]~input_o ),
+	.datac(!state[3]),
+	.datad(!state[2]),
+	.datae(!state[0]),
+	.dataf(!\Mux3~3_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mux3~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mux3~2 .extended_lut = "off";
+defparam \Mux3~2 .lut_mask = 64'h0000B0F0FF00B0F0;
+defparam \Mux3~2 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X87_Y36_N56
+dffeas \state[0] (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\Mux3~2_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(state[0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state[0] .is_wysiwyg = "true";
+defparam \state[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: IOIBUF_X76_Y81_N1
+cyclonev_io_ibuf \keyboard[5]~input (
+	.i(keyboard[5]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\keyboard[5]~input_o ));
+// synopsys translate_off
+defparam \keyboard[5]~input .bus_hold = "false";
+defparam \keyboard[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X45_Y46_N3
+cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
+// Equation(s):
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\~QUARTUS_CREATED_GND~I_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \~QUARTUS_CREATED_GND~I .extended_lut = "off";
+defparam \~QUARTUS_CREATED_GND~I .lut_mask = 64'h0000000000000000;
+defparam \~QUARTUS_CREATED_GND~I .shared_arith = "off";
+// synopsys translate_on
+
+endmodule

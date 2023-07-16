@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at swap_memory_sim.sv(147): always construct contains both blocking and non-blocking assignments File: D:/cpen311/lab4_template_de1soc/simulation_wave/swap_memory_sim/swap_memory_sim.sv Line: 147

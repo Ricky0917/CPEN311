@@ -1,0 +1,529 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "finish_a",
+					"strict" : false
+				},
+				{
+					"name" : "finish_b",
+					"strict" : false
+				},
+				{
+					"name" : "reset_start_request_a",
+					"strict" : false
+				},
+				{
+					"name" : "reset_start_request_b",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_a[6]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_a[7]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_b[6]",
+					"strict" : false
+				},
+				{
+					"name" : "received_data_b[7]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[0]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[1]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[2]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[3]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[4]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[5]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[6]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[7]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[8]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[9]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[10]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[11]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[12]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[13]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[14]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[15]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[16]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[17]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[18]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[19]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[20]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[21]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[22]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[23]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[24]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[25]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[26]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[27]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[28]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[29]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[30]",
+					"strict" : false
+				},
+				{
+					"name" : "output_arguments[31]",
+					"strict" : false
+				},
+				{
+					"name" : "start_target_state_machine",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[6]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[6]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[7]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[7]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[8]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[8]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[9]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[9]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[10]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[10]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[11]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[11]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[12]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[12]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[13]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[13]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[14]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[14]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[15]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[15]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[16]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[16]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[17]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[17]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[18]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[18]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[19]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[19]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[20]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[20]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[21]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[21]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[22]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[22]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[23]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[23]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[24]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[24]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[25]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[25]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[26]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[26]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[27]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[27]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[28]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[28]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[29]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[29]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[30]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[30]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_b[31]",
+					"strict" : false
+				},
+				{
+					"name" : "input_arguments_a[31]",
+					"strict" : false
+				},
+				{
+					"name" : "sm_clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "start_request_a",
+					"strict" : false
+				},
+				{
+					"name" : "start_request_b",
+					"strict" : false
+				},
+				{
+					"name" : "in_received_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "in_received_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "in_received_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "in_received_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "in_received_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "in_received_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "in_received_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "in_received_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "target_state_machine_finished",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

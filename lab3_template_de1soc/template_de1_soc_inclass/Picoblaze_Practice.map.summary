@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Sat Jun 10 14:53:27 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Picoblaze_Practice
+Top-level Entity Name : Picoblaze_Practice
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 1078
+Total pins : 149
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

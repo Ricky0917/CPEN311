@@ -1,0 +1,44 @@
+|initialize_memory_sim
+clk => i[0].CLK
+clk => i[1].CLK
+clk => i[2].CLK
+clk => i[3].CLK
+clk => i[4].CLK
+clk => i[5].CLK
+clk => i[6].CLK
+clk => i[7].CLK
+clk => state[0].CLK
+clk => state[1].CLK
+clk => state[2].CLK
+clk => state[3].CLK
+clk => state[4].CLK
+start => Selector0.IN5
+start => Selector1.IN2
+reset => i.OUTPUTSELECT
+reset => i.OUTPUTSELECT
+reset => i.OUTPUTSELECT
+reset => i.OUTPUTSELECT
+reset => i.OUTPUTSELECT
+reset => i.OUTPUTSELECT
+reset => i.OUTPUTSELECT
+reset => i.OUTPUTSELECT
+address[0] <= i[0].DB_MAX_OUTPUT_PORT_TYPE
+address[1] <= i[1].DB_MAX_OUTPUT_PORT_TYPE
+address[2] <= i[2].DB_MAX_OUTPUT_PORT_TYPE
+address[3] <= i[3].DB_MAX_OUTPUT_PORT_TYPE
+address[4] <= i[4].DB_MAX_OUTPUT_PORT_TYPE
+address[5] <= i[5].DB_MAX_OUTPUT_PORT_TYPE
+address[6] <= i[6].DB_MAX_OUTPUT_PORT_TYPE
+address[7] <= i[7].DB_MAX_OUTPUT_PORT_TYPE
+data[0] <= i[0].DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= i[1].DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= i[2].DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= i[3].DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= i[4].DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= i[5].DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= i[6].DB_MAX_OUTPUT_PORT_TYPE
+data[7] <= i[7].DB_MAX_OUTPUT_PORT_TYPE
+finish <= state[4].DB_MAX_OUTPUT_PORT_TYPE
+write_enable <= state[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,25 @@
+module speed_control(
+	input logic clk,
+	input logic speed_up, speed_down, speed_reset, 
+	output logic [31:0] diff_div
+);
+parameter out_div = 32'h470; // 50M/2/22k
+//parameter out_div = 32'h238; // 27M/2/44k
+
+logic [2:0] speed;
+logic [31:0] div = out_div;
+assign speed = {speed_up,speed_down,speed_reset};
+
+
+always_ff @(posedge clk)
+	case(speed)
+		3'b001: div <= out_div;
+		3'b010: div <= diff_div + 32'h10;
+		3'b100: div <= diff_div - 32'h10 ;
+		default: div <= div;
+	endcase
+assign diff_div = div;
+
+endmodule
+
+ 

@@ -1,0 +1,113 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/02/2023 16:19:04"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          qs2
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module qs2_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg goto_third;
+reg pause;
+reg restart;
+reg rst;
+// wires                                               
+wire [2:0] Out1;
+wire [2:0] Out2;
+wire even;
+wire odd;
+wire [10:0] state;
+wire terminal;
+
+// assign statements (if any)                          
+qs2 i1 (
+// port map - connection between master ports and signals/registers   
+	.Out1(Out1),
+	.Out2(Out2),
+	.clk(clk),
+	.even(even),
+	.goto_third(goto_third),
+	.odd(odd),
+	.pause(pause),
+	.restart(restart),
+	.rst(rst),
+	.state(state),
+	.terminal(terminal)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// rst
+initial
+begin
+	rst = 1'b0;
+	rst = #530000 1'b1;
+	rst = #20000 1'b0;
+end 
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #5000 1'b1;
+	#5000;
+end 
+
+// pause
+initial
+begin
+	pause = 1'b0;
+	pause = #20000 1'b1;
+	pause = #40000 1'b0;
+	pause = #40000 1'b1;
+	pause = #40000 1'b0;
+	pause = #40000 1'b1;
+	pause = #40000 1'b0;
+	pause = #40000 1'b1;
+	pause = #40000 1'b0;
+	pause = #130000 1'b1;
+	pause = #30000 1'b0;
+end 
+
+// restart
+initial
+begin
+	restart = 1'b0;
+	restart = #370000 1'b1;
+	restart = #20000 1'b0;
+end 
+
+// goto_third
+initial
+begin
+	goto_third = 1'b0;
+	goto_third = #460000 1'b1;
+	goto_third = #40000 1'b0;
+end 
+endmodule
+

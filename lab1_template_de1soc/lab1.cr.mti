@@ -1,0 +1,8 @@
+D:/cpen311/lab1_template_de1soc/clock_divider.sv {1 {vlog -work work -sv -stats=none D:/cpen311/lab1_template_de1soc/clock_divider.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module clock_divider
+
+Top level modules:
+	clock_divider
+
+} {} {}}

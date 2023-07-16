@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "out_signal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_signal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out_signal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "keyboard[4]",
+					"strict" : false
+				},
+				{
+					"name" : "keyboard[0]",
+					"strict" : false
+				},
+				{
+					"name" : "keyboard[1]",
+					"strict" : false
+				},
+				{
+					"name" : "keyboard[3]",
+					"strict" : false
+				},
+				{
+					"name" : "keyboard[6]",
+					"strict" : false
+				},
+				{
+					"name" : "keyboard[7]",
+					"strict" : false
+				},
+				{
+					"name" : "keyboard[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "finish",
+					"strict" : false
+				},
+				{
+					"name" : "data_ready",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

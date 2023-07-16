@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/cpen311/lab4_template_de1soc/simulation_wave/initialize_memory_sim/simulation/qsim
+vinitialize_memory_sim
+Z1 !s110 1687051872
+!i10b 1
+!s100 R6[iD_P_e:IJl@1?KPQH71
+IDYeNU9?Yc?JH=R>DLSCWn2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1687051871
+8initialize_memory_sim.vo
+Finitialize_memory_sim.vo
+L0 31
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1687051872.000000
+!s107 initialize_memory_sim.vo|
+!s90 -work|work|initialize_memory_sim.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vinitialize_memory_sim_vlg_vec_tst
+R1
+!i10b 1
+!s100 [>LYVaOfE7bHC50FjW8DL1
+I^6@fW`]WzbRV]dm3b;Ii:1
+R2
+R0
+R3
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7

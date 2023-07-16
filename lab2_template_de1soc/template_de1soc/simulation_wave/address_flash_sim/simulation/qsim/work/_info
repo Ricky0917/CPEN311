@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/cpen311/lab2_template_de1soc/template_de1soc/simulation_wave/address_flash_sim/simulation/qsim
+vaddress_flash_sim
+Z1 !s110 1686338299
+!i10b 1
+!s100 MCHoS313HAkBO<Bo8=K0@0
+IDEJbNTaC4A_9LYgmFkNA32
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1686338298
+8address_flash_sim.vo
+Faddress_flash_sim.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1686338299.000000
+!s107 address_flash_sim.vo|
+!s90 -work|work|address_flash_sim.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vaddress_flash_sim_vlg_vec_tst
+R1
+!i10b 1
+!s100 g6e=3_]WmA6T4UiLXPY4[0
+IZlO_4gB]@^`>:^1[j8D1e1
+R2
+R0
+w1686338297
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
